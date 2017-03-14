@@ -1,0 +1,1181 @@
+﻿<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title>White Rose Aikido Hyde</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font: 400 15px/1.8 Lato, sans-serif;
+            color: #777;
+        }
+
+        h3, h4 {
+            margin: 10px 0 30px 0;
+            letter-spacing: 10px;
+            font-size: 20px;
+            color: #111;
+        }
+
+        divPad {
+            padding: 25px;
+        }
+
+        .container {
+            padding: 20px 30px;
+        }
+
+        .person {
+            border: 10px solid transparent;
+            margin-bottom: 25px;
+            width: 80%;
+            height: 80%;
+            opacity: 0.7;
+        }
+
+            .person:hover {
+                border-color: #f1f1f1;
+            }
+
+        .carousel-inner img {
+            -webkit-filter: grayscale(90%);
+            filter: grayscale(90%); /* make all photos black and white */
+            width: 100%; /* Set width to 100% */
+            margin: auto;
+        }
+
+        .carousel-caption h3 {
+            color: #fff !important;
+        }
+
+        @media (max-width: 600px) {
+            .carousel-caption {
+                display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+            }
+        }
+
+        .bg-1 {
+            background: #2d2d30;
+            color: #bdbdbd;
+        }
+
+            .bg-1 h3 {
+                color: #fff;
+            }
+
+            .bg-1 p {
+                font-style: italic;
+            }
+
+        .list-group-item:first-child {
+            border-top-right-radius: 0;
+            border-top-left-radius: 0;
+        }
+
+        .list-group-item:last-child {
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+        .thumbnail {
+            padding: 0 0 15px 0;
+            border: none;
+            border-radius: 0;
+        }
+
+        .thumbnail p {
+            margin-top: 15px;
+            color: #555;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #f1f1f1;
+            border-radius: 0;
+            transition: .2s;
+        }
+
+            .btn:hover, .btn:focus {
+                border: 1px solid #333;
+                background-color: #fff;
+                color: #000;
+            }
+
+        /*.modal-header, h4, .close {
+            background-color: #333;
+            color: #fff !important;
+            text-align: center;
+            font-size: 30px;
+        }*/
+
+        .modal-header, .modal-body {
+            padding: 30px 40px;
+        }
+
+        .nav-tabs li a {
+            color: #777;
+        }
+
+        #googleMap {
+            width: 100%;
+            height: 400px;
+            /*-webkit-filter: grayscale(100%);
+            filter: grayscale(100%);*/
+        }
+
+        .navbar {
+            font-family: Montserrat, sans-serif;
+            margin-bottom: 0;
+            background-color: #2d2d30;
+            border: 0;
+            font-size: 11px !important;
+            letter-spacing: 4px;
+            opacity: 0.9;
+        }
+
+            .navbar li a, .navbar .navbar-brand {
+                color: #d5d5d5 !important;
+            }
+
+        .navbar-nav li a:hover {
+            color: #fff !important;
+        }
+
+        .navbar-nav li.active a {
+            color: #fff !important;
+            background-color: #29292c !important;
+        }
+
+        .navbar-default .navbar-toggle {
+            border-color: transparent;
+        }
+
+        .open .dropdown-toggle {
+            color: #fff;
+            background-color: #555 !important;
+        }
+
+        .dropdown-menu li a {
+            color: #000 !important;
+        }
+
+            .dropdown-menu li a:hover {
+                background-color: red !important;
+            }
+
+        /*footer {
+            background-color: #2d2d30;
+            color: #f5f5f5;
+            padding: 32px;
+            height: 250px;
+        }*/
+
+        .bigfooter {
+            background-color: #2d2d30;
+            color: #f5f5f5;
+            padding: 32px;
+            height: 500px;
+        }
+
+        .littlefooter {
+            background-color: #2d2d30;
+            color: #f5f5f5;
+            padding: 32px;
+            height: 250px;
+        }
+
+        footer a {
+            color: #f5f5f5;
+        }
+
+        footer a:hover {
+            color: #777;
+            text-decoration: none;
+        }
+
+        .form-control {
+            border-radius: 0;
+        }
+
+        textarea {
+            resize: none;
+        }
+    </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--<a class="navbar-brand" href="#myPage">Logo</a>-->
+                <img src="Images/WhiteRoseAikido.png" class="img-responsive" alt="WhiteRoseAikido" width="90" height="90">
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#myPage">HOME</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            DETAILS
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#about">About Aikido</a>
+                            </li>
+                            <li>
+                                <a href="#Instructors">Instructors</a>
+                            </li>
+                            <li>
+                                <a href="#Sessions">Where and When</a>
+                            </li>
+                            <li>
+                                <a href="#Fees">Fees</a>
+                            </li>
+                            <li>
+                                <a href="#Join">Join Us</a>
+                            </li>
+                            <li>
+                                <a href="#FAQ">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#Child">Child Protection</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            NEWS
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#Events">Events</a>
+                            </li>
+                            <li>
+                                <a href="#Articles">Articles</a>
+                            </li>
+                            <li>
+                                <a href="#Links">Links</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#contact">CONTACT</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            TRAINING
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#Techniques">Techniques</a>
+                            </li>
+                            <li>
+                                <a href="#Grading">Grading</a>
+                            </li>
+                            <li>
+                                <a href="#Courses">Courses</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><span class="glyphicon glyphicon-search"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="welcome" class="container text-center">
+        <img src="Images/HydeClubBanner.png" class="img-responsive" alt="Hyde Dojo" width="1500" height="150">
+        <br />
+        <h2>WELCOME</h2>
+
+        <p>The Hyde Dojo originally started at the Hyde Lads Club in the early nineties. After the lads club closed we moved to several venues before finally settling at the Longdendale Recreation Centre where we practised for eighteen years until it closed in 2014.</p>
+
+        <p>We are now at The Ken Ward Centre, Hattersley.</p>
+
+        <p>We practice the traditional style of Aikido, as taught by Morihei Ueshiba or O Sensei. Barry Chapman is the Head Instructor at the club and is supported by instructors Jeff Warner and Scott Derbyshire.</p>
+
+        We are an inclusive, family-friendly club, made up of male and female members from different ages and backgrounds.
+
+        If you are interested in finding out more, please get in touch through the contact page using the button below or email us at:
+        <a href="mailto:contact@aikidomanchester.co.uk"><b>contact@aikidomanchester.co.uk</b></a></p>
+        <hr />
+    </div>
+    <div id="about" class="container text-center">
+        <h2>ABOUT AIKIDO</h2>
+        <br />
+        <img src="Images/sensei_large.jpg" class="img-responsive text-center" alt="Sensei" width="800" height="300">
+        <br />
+        <h2>What is Aikido?</h2>
+        <br />
+
+        <p>Aikido is an approach to dealing with aggression and violence through positive and energetic training. it applies effective martial techniques in a very unique way – by using dynamic body movements, attacks are neutralised.</p>
+        <p>The skilled aikidoist is able to redirect the force of an attack safely and effectively. More significantly, aikido is designed to deal with several opponents, not just one.</p>
+        <p>Morihei Ueshiba created aikido in the early 20th Century. Known to his students as “O Sensei” (Great Teacher), he was a master of several martial arts and a deeply spiritual person. He reconciled these seemingly disparate disciplines by creating aikido, a martial way to help people develop their physical, mental and spiritual potential.</p>
+        <hr />
+    </div>
+    <div id="Instructors" class="container text-center">
+        <h2>INSTRUCTORS</h2>
+        <br />
+        <img src="Images/5Dan.jpg" class="img-responsive" alt="Sensei" width="800" height="300">
+        <br />
+        <h3>Barry Chapman</h3>
+        <p>
+            <i>Founder of Hyde club and Lead Instuctor – Black Belt 5th Dan, BAB Coach Level 1</i>
+        </p>
+        <p>Barry started training in the martial arts in 1963, studying Wado Ryu Karate.  In the early seventies he studied Tai Chi, first with Danny Connor and then Rose Li.  He started his Aikido training in 1975.</p>
+        <p>He founded the Hyde club in 1990 and instructs regularly on Tuesday and Friday evening classes.</p>
+        <p>Barry was awarded his 5th Dan grade by Sensei Shane Riley  of the White Rose Aikikai on 22nd July 2011.</p>
+        <p>Of the many aspects there are in Aikido, the one thing that maintains and stimulates his interest in Aikido is that there is always something new to learn.</p>
+        <p>
+            Contact:
+            <a href="mailto:barry@aikidomanchester.co.uk"><b>barry@aikidomanchester.co.uk</b></a>
+        </p>
+
+
+        <hr />
+        <img src="Images/Geoff_Sensei.jpg" class="img-responsive" alt="Sensei" width="800" height="300">
+        <br />
+        <h3>Jeff Warner</h3>
+        <br />
+        <p>
+            <i>Instructor – Black Belt 4th Dan,  BAB Coach Level 1</i>
+        </p>
+        <p>Jeff joined the Hyde club in 1994 after attending a 6 week beginners’ course.  He enjoyed Aikido and the course so much that he has remained at the club ever since.</p>
+        <p>After gaining his Shodan in 2001, Jeff has taught regularly on Tuesday evening classes.</p>
+        <p>His favourite aspect of Aikido is the way the mind and body have to work together to try for the perfect techniques that elude us all.</p>
+        <p>
+            Contact:
+            <a href="mailto:jeff@aikidomanchester.co.uk"><b>jeff@aikidomanchester.co.uk</b></a>
+        </p>
+
+
+        <hr />
+        <h3>Scott Derbyshire</h3>
+        <br />
+        <p>
+            <i>Instructor – Black Belt 1st Dan,  BAB Coach Level 1</i>
+        </p>
+        <p>
+            Contact:
+            <a href="mailto:scott@aikidomanchester.co.uk"><b>scott@aikidomanchester.co.uk</b></a>
+        </p>
+        <hr />
+    </div>
+    <div id="Sessions" class="container text-center">
+        <h2>SESSIONS</h2>
+        <br />
+        <img src="Images/Practice_2.jpg" class="img-responsive" alt="Sensei" width="800" height="300">
+        <br />
+        <h2>Practice Nights</h2>
+        <br />
+        <p>Tuesday 8:00 PM to 9:30 PM</p>
+        <br />
+        <p>Friday 7:30 PM to 9:00 PM</p>
+        <hr />
+        <h2>What happens during a general practice session?</h2>
+        <br />
+        <p>Generally, the class instructor (Sensei) will demonstrate a technique or movement, which the whole class will practice.  You will then find a partner and taking turns you will practice the technique on each other.  You will experience initiating an attack;  performing a defensive movement against an attack and then a full counter technique to the attack.  There will be a degree of physical contact with your partner, you will be taught controlling applications from grabbing and striking situations.   Aikido techniques can include arm locking and throwing applications. During the course of a lesson you may also get to practice with wooden swords (bokken), spears (jyo) and knives (tanto).</p>
+        <br />
+        <h2>LOCATION</h2>
+        <br />
+        <h3>CLUB DETAILS</h3>
+
+            <p>Address:</p>
+            <p>Aikido Manchester, Hyde Dojo</p>
+            <p>The Ken Ward Centre</p>
+            <p>Hattersley Road West</p>
+            <p>Hyde</p>
+            <p>SK14 3NL</p>
+        <div id="googleMap" class="entre block img-responsive"></div>
+        <hr />
+    </div>
+    <div id="Fees" class="container text-center">
+        <h2>FEES</h2>
+        <br />
+        <img src="Images/Practice_3.jpg" class="img-responsive" alt="Sensei" width="800" height="300">
+        <br />
+        <div class="hidden-md hidden-lg">
+            <h2>Monthly Mat Fees</h2>
+            <br />
+            <p>Adults £25.00/month</p>
+            <br />
+            <p>Juniors – Please contact us for more details.</p>
+
+            <p>Yearly Subscription Fees (includes insurance)</p>
+            <br />
+            <p>Adults £40.00 – Students & U18 £20.00 one off annual payment</p>
+
+        </div>
+      
+        <div class="hidden-xs hidden-sm">
+            <table class="table table-hover table-border">
+                <thead>
+                    <tr>
+                        <td></td>
+                        <td><b>Monthly</b> Mat Fees</td>
+                        <td><b>Annual</b> Insurance Fee</td>
+                    </tr>
+                    <tr>
+                        <td>Adults</td>
+                        <td>£ 25</td>
+                        <td>£ 20</td>
+                    </tr>
+                    <tr>
+                        <td>Students and U18</td>
+                        <td>£ 10</td>
+                        <td>£ 20</td>
+                    </tr>
+
+                    <tr>
+                        <td>Juniors</td>
+                        <td>£ Please Contact Us</td>
+                        <td>£ 20</td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+     
+        <hr />
+    </div>
+
+
+    <div id="Join" class="container text-center">
+        <h2>REASONS TO JOIN US</h2>
+
+        <img src="Images/Group_1.jpg" class="img-responsive" alt="Sensei" width="800" height="300">
+        <br />
+        <p>More than just a  martial art, there are many ways in which Aikido can improve your way of life and general well-being:</p>
+        <hr />
+        <h2>Physically</h2>
+        <br />
+        <p>Aikido helps to develop all-round physical fitness in a unique manner. Unlike many other sports, where specific muscle groups are targeted and trained to develop speed, mass or power, Aikido concentrates on moving the whole body in a coordinated and relaxed manner.</p>
+        <p>Because movement originates from the centre of the body, the power generated is extended naturally to the limbs in a more efficient way without putting excessive stress on joints.</p>
+        <p>The result is great flexibility, efficient muscle movement, high aerobic fitness, and a reduced risk of injury through over-training.</p>
+        <hr />
+        <h2>Psychologically</h2>
+        <br />
+        <p>In order to be a successful aikidoka, the mind and body must become “one”. Aikido can teach you great self-awareness and control over your own body and how it moves in a three-dimensional space.</p>
+        <p>
+            Mental relaxation is a key part of achieving focus and understanding how to react in a hostile situation. Aikido teaches the student to face conflict pro-actively and resolve attacks in a constructive manner.
+        </p>
+        <p>The mindset achieved through long-term Aikido training can be applied to everyday life to resolve conflict through non-violent yet assertive means.</p>
+        <hr />
+        <h2>Join Us</h2>
+        <br />
+        <p>The great thing about Aikido training is that it can allow a well-trained Aikidoka to overcome someone who is physically bigger or stronger than themselves.</p>
+        <p>Aikido is used by many police forces world-wide and in institutions where non-violent but assertive action is required.</p>
+        <p>
+            Taking the first step and joining is usually the hardest! If you’ve never practiced a martial art before, and want to know a bit more, why not read a current member’s account of his experience of when he first joined:
+            Finding Aikido: A Beginner’s Tale by Len Holowko
+        </p>
+        <hr />
+    </div>
+    <div id="FAQ" class="container text-center">
+        <h2>FREQUENTLY ASKED QUESTIONS</h2>
+        <br />
+        <h2>What time should I arrive for practice?</h2>
+        <p>Arrive for practice 15-20 minutes before the start time. This will allow time to prepare the dojo and for you to get changed.</p>
+        <br />
+        <h2>What should I wear for practice?</h2>
+        <p>Most beginners wear lose clothing (tracksuit or T-shirt and jog pants). Most people who have been practising for several weeks or months invest in an Judo/Aikido suit, known as a do-gi. A do-gi can be purchased on-line or at a sports shop. They can vary in price dependent upon the quality and weight of the fabric.</p>
+        <br />
+        <h2>How fit do I need to be to practice Aikido?</h2>
+        <p>It is not critical to be able to lift heavyweights or run a marathon to practice Aikido. Fitness levels need to moderate as we encourage people to practice at their own pace and ability. It is, however, important that you let the class instructor (or Sensei) know if you have any specific medical conditions or medication requirements before you begin practicing.</p>
+        <br />
+        <h2>What does it cost to practice Aikido? Will I be insured against any injuries?</h2>
+        <p>The £40 yearly fee covers individual insurance against injury. Details of levels of cover are available on request. All instructors are covered by indemnity insurances.</p>
+        <br />
+        <h2>What kinds of things will I learn at the lesson?</h2>
+        <p>Generally, the class instructor (Sensei) will demonstrate a technique or movement, which the whole class will practice. You will then find a partner and taking turns you will practice the technique on each other. You will experience initiating an attack; performing a defensive movement against an attack and then a full counter technique to the attack. There will be a degree of physical contact with your partner, you will be taught controlling applications from grabbing and striking situations. Aikido techniques can include arm locking and throwing applications. During the course of a lesson you may also get to practice with wooden swords (bokken), spears (jyo) and knives (tanto)</p>
+        <br />
+        <h2>Who will be teaching me?</h2>
+        <p>Any one of the five ‘black belt’ level instructors listed in the instructors section of this website. Each instructor will have a slightly different view on Aikido which will enhance your understanding of the Martial Art.</p>
+        <br />
+        <h2>What is the grading system?</h2>
+        <p>Generally a beginner will start with a red belt. After completing a grading (examination) you can progress to the next grade 6th kyu or white belt. After the successful completion of the next grading you will progress to 5th kyu or yellow belt. Then 4th kyu or orange belt, 3rd kyu green belt, 2nd kyu blue belt, 1st kyu brown belt then onto black belt or sho-dan.</p>
+        <br />
+        <h2>What do I have to do in a grading?</h2>
+        <p>Please refer to the grading syllabus section of this site and enjoy the clips in the Techniques section. For detailed information, please contact one of the instructors.</p>
+        <br />
+        <h2>How long does it take to reach the level of black belt?</h2>
+        <p>Generally, it takes about 5 years. Some people are quicker and others slower – it really depends on you,  how much you practice, how well your mind and body adapts and how well you understand Aikido techniques and principles</p>
+        <hr />
+    </div>
+    <div id="Child" class="container text-center">
+        <h2>CHILD PROTECTION POLICY</h2>
+        <br />
+        <p>Aikido Manchester acknowledges the duty of care to safeguard and promote the welfare of children and is committed to ensuring safeguarding practice reflects statutory responsibilities, government guidance and complies with best practice and BAB requirements.</p>
+        <p>The policy recognises that the welfare and interests of children are paramount in all circumstances. It aims to ensure that regardless of age, gender, religion or beliefs, ethnicity, disability, sexual orientation or socio-economic background, all children:</p>
+        <ul class="list-unstyled">
+            <li>
+                <ul>
+                    <li>Have a positive and enjoyable experience of sport at Aikido Manchester in a safe and child-centred environment</li>
+                    <li>Are protected from abuse whilst participating in Aikido Manchester club sessions or outside of the activity.</li>
+                </ul>
+            </li>
+        </ul>
+        <p>Aikido Manchester acknowledges that some children, including disabled children and young people or those from ethnic minority communities, can be particularly vulnerable to abuse and we accept the responsibility to take reasonable and appropriate steps to ensure their welfare.</p>
+        <p>As part of our safeguarding policy Aikido Manchester will:</p>
+        <ul class="list-unstyled">
+            <li>
+                <ul>
+                    <li>Promote and prioritise the safety and wellbeing of children and young people</li>
+                    <li>
+                        Ensure everyone understands their roles and responsibilities in respect of safeguarding and is provided with appropriate learning opportunities to recognise, identify and respond to signs of abuse, neglect and other safeguarding concerns relating to children and young people
+                    </li>
+                    <li>Ensure appropriate action is taken in the event of incidents/concerns of abuse and support provided to the individual/s who raise or disclose the concern</li>
+                    <li>Ensure that confidential, detailed and accurate records of all safeguarding concerns are maintained and securely stored</li>
+                    <li>Prevent the employment/deployment of unsuitable individuals</li>
+                    <li>Ensure robust safeguarding arrangements and procedures are in operation</li>
+                </ul>
+            </li>
+        </ul>
+        <p>The policy and procedures will be widely promoted and are mandatory for everyone involved in Aikido Manchester. Failure to comply with the policy and procedures will be addressed without delay and may ultimately result in dismissal/exclusion from the organisation.</p>
+        <p>If you have any concerns about abuse or poor practice, please contact Barry Chapman at barry@aikidomanchester.co.uk, or contact the BAB Lead Safeguarding Officer on 01271 343952 or email sueward.cpo@gmail.com</p>
+        <hr />
+    </div>
+
+    <!-- Container (The training Section) -->
+   
+  
+    <!--<div id="Techniques" class="container text-center">
+        <h2>Techniques</h2>
+        <br />
+        <p>Our collection of technique videos will help you to improve your form and understanding. We hope to add more videos in the future, so watch this space!</p>
+        <div class="row">
+            <div class="col-md-3 col-lg-3">
+               <p>Technique</p>
+                <iframe width="300" height="300" src="https://www.youtube.com/embed/XGSy3_Czz8k"> </iframe>
+            </div>
+            <div class="col-md-3 col-lg-3">
+                <p>Tsuki irimi nage</p>
+                <iframe width="300" height="300" src="https://youtu.be/DylwumpHkbA"> </iframe>
+            </div>
+            <div class="col-md-3 col-lg-3">
+                <p>Technique</p>
+                <iframe width="300" height="300" src="https://www.youtube.com/embed/XGSy3_Czz8k"> </iframe>
+            </div>
+        </div>
+        
+        <hr />
+    </div>-->
+
+
+     <div id="Techniques"  class="bg-1">
+            <div class="container">
+                <h3 class="text-center">TECHNIQUES</h3>
+                <p class="text-center">
+                    
+                </p>
+                <div class="row text-center">
+                    <div class="col-sm-4">
+                        <div class="thumbnail">
+                            <img src="Images/Aik_Kaiten.jpg" alt="IrimiNage" width="300" height="200">
+                            
+                            <p>
+                                <strong>Tsuki irimi nage</strong>
+                            </p>
+                            <button class="btn" data-toggle="modal" data-target="#myModal">Watch Video</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="thumbnail">
+                            <img src="Images/Aik_Kaiten.jpg" alt="Shomen uchi ikkyo" width="300" height="200">
+                            <p>
+                                <strong>Yokkomen Shiho Nage</strong>
+                            </p>
+
+                            <button class="btn" data-toggle="modal" data-target="#shomenModal">Watch Video</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="thumbnail">
+                            <img src="Images/Aik_Bokken.jpg" alt="Bokken suburi no 2" width="300" height="200">
+                            <p>
+                                <strong>Bokken suburi no 2</strong>
+                            </p>
+                            <button class="btn" data-toggle="modal" data-target="#bokkenModal">Watch Video</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         
+
+        </div>
+
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <p>Tsuki irimi nage</p>
+                        <button type="button" class="close" data-dismiss="modal"> Close</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col-md-3 col-lg-3">
+                            <div class="hidden-md hidden-lg">
+                                <iframe width="200" height="200" src="https://youtu.be/DylwumpHkbA"> </iframe>
+                            </div>
+                            <div class="hidden-xs hidden-sm">
+                                <iframe width="500" height="500" src="https://www.youtube.com/embed/XGSy3_Czz8k"> </iframe>
+                            </div>
+                        </div>
+                       
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+
+
+    <div class="modal fade" id="bokkenModal" role="dialog">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Bokken suburi number 2</h2> 
+                    <button type="button" class="close" data-dismiss="modal">Close</button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-md-3 col-lg-3">
+                        <div class="hidden-md hidden-lg">
+                            <video width="200" height="200" src="Videos/BokkenSuburiNo2.mp4" type="video/mp4"> </video>
+                        </div>
+                        <div class="hidden-xs hidden-sm">
+                            <iframe width="500" height="500" src="Videos/BokkenSuburiNo2.mp4" type="video/mp4"> </iframe>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="shomenModal" role="dialog">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Yokkomen Shiho Nage</h2>
+                    <button type="button" class="close" data-dismiss="modal">Close</button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-md-3 col-lg-3">
+                        <div class="hidden-md hidden-lg">
+                            <video width="200" height="200" controls>
+                                <source src="Videos/YokkomenShihoNage.mp4" type="video/mp4"/>
+                            </video>
+                        </div>
+                        <div class="hidden-xs hidden-sm">
+                            <video width="500" height="500" controls>
+                                <source src="Videos/YokkomenShihoNage.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="Grading" class="container text-center">
+        <h2>GRADING SYLLABUS</h2>
+        <p>Course gradings are carried out periodically throughout the year. Click on the pictures below to see more details of the syllabus for your next Kyu grading </p>
+        <br>
+        <div class="row">
+            <div class="col-sm-4">
+                <p class="text-center">
+                    <strong>5th Kyu (Yellow)</strong>
+                </p>
+                <br>
+                <a href="#yellow" data-toggle="collapse">
+                    <img src="Images/5_yellow.png" class="img-rounded" alt="FifthKyu" width="200" height="200" title="Click on the image to see the syllabus for 5th Kyu (yellow)">
+                </a>
+                <div id="yellow" class="collapse">
+                    <p><b>Techniques that you need to learn and demonstrate:</b></p>
+                    <ul class="list-unstyled">
+                        <li>
+                            <ul>
+                                <li>Shomen uchi ikkyo (omote and ura waza)</li>
+                                <li>Shomen uchi irimi nage</li>
+                                <li>Katate dori Shiho nage (omote & ura)</li>
+                                <li>Ryote dori tenchi nage</li>
+                                <li>Tsuki Kategaeshi</li>
+                                <li>Morote dori kokyu ho</li>
+                                <li>Jyo waza 1-6</li>
+                                <li>Bokken Suburi 1</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p><b>To be eiligible to grade you must have practised in excess of 60 hours</b></p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <p class="text-center">
+                    <strong>4th Kyu (Orange)</strong>
+                </p>
+                <br>
+                <a href="#orange" data-toggle="collapse">
+                    <img src="Images/4_Orange.png" class="img-rounded" alt="ForthKyu" width="200" height="200" title="Click on the image to see the syllabus for 4th Kyu (orange)">
+                </a>
+                <div id="orange" class="collapse">
+                    <p><b>Techniques that you need to learn and demonstrate:</b></p>
+                    <ul class="list-unstyled">
+                        <li>
+                            <ul>
+                                <li>Shomen uchi nikkyo (omote and ura waza)</li>
+                                <li>Yokomen uchi Shiho nage (omote and ura waza)</li>
+                                <li>Tsuki irimi nage</li>
+                                <li>Ushiro Tekubi tore san kyo (omote and ura waza)</li>
+                                <li>Suwari waza Shomen uchi ikkyo</li>
+                                <li>Suwari waza Shomen uchi nikkyo (omote and ura waza)</li>
+                                <li>Suwari waza Kata dori san kyo</li>
+                                <li>Jyo waza 1-12</li>
+                                <li>Bokken Suburi 1-4</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p><b>To be eiligible to grade you must have practised in excess of 80 hours since your previous grading</b></p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <p class="text-center">
+                    <strong>3rd Kyu (Green)</strong>
+                </p>
+                <br>
+                <a href="#green" data-toggle="collapse">
+                    <img src="Images/3_Green.png" class="img-rounded" alt="ThirdKyu" width="200" height="200" title="Click on the image to see the syllabus for 3rd Kyu (green)">
+                </a>
+                <div id="green" class="collapse">
+                    <p><b>Techniques that you need to learn and demonstrate:</b></p>
+                    <ul class="list-unstyled">
+                        <li>
+                            <ul>
+                                <li>Yokomen uchi irimi nage (2 different executions)</li>
+                                <li>Yokomen uchi Kotegaeshi</li>
+                                <li>Tsuki kaiten nage</li>
+                                <li>Ushiro ryo kata dori sankyo (omote and ura waza)</li>
+                                <li>Morote dori irimi nage (2 different executions) </li>
+                                <li>Suwari waza Shomen uchi irimi nage</li>
+                                <li>Suwari waza Shomen uchi sankyo (omote and ura waza)</li>
+                                <li>Hanmi handachi waza katate dori shiho nage</li>
+                                <li>Hanmi handachi waza katate dori shiho nage (uchi and soto)</li>
+                                <li>Jyo waza 1-18</li>
+                                <li>Bokken Suburi 1-5</li>
+                                <li>Tanto dori</li>
+                                <li>Jyo waza</li>
+                                <li>Jyo dori</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p><b>To be eiligible to grade you must have practised in excess of 100 hours since your previous grading</b></p>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-sm-6">
+                <p class="text-center">
+                    <strong>2nd Kyu (Blue)</strong>
+                </p>
+                <br>
+                <a href="#blue" data-toggle="collapse">
+                    <img src="Images/2_Blue.png" class="img-rounded" alt="SecondKyu" width="200" height="200" title="Click on the image to see the syllabus for 2nd Kyu (Blue)">
+                </a>
+                <div id="blue" class="collapse">
+                    <p><b>Techniques that you need to learn and demonstrate:</b></p>
+                    <ul class="list-unstyled">
+                        <li>
+                            <ul>
+                                <li>Shomen uchi shihno nage</li>
+                                <li>Shomen uchi kaiten nage</li>
+                                <li>Yokomen uchi tori gokyo</li>
+                                <li>Ushiro Tekubi tori shiho nage</li>
+                                <li>Ushiro Tekubi tori juji nage</li>
+                                <li>Ushiro kubishime koshi nage</li>
+                                <li>Morote dori nikyo</li>
+                                <li>Hanmi handachi shomen uchi irimi nage</li>
+                                <li>Hanmi handachi katate dori nikyo</li>
+                                <li>Hanmi handachi yokomen uchi kotegaeshi</li>
+                                <li>Futari dori (attack from 2 opponents)</li>
+                                <li>San nin dori (attack from 3 opponents)</li>
+                                <li>Bokken Suburi 1-6</li>
+                                <li>Jyo kata 1-24</li>
+                                <li>Tantodori</li>
+                                <li>Jyo waza</li>
+                                <li>Jyo dori</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p><b>To be eiligible to grade you must have practised in excess of 150 hours since your previous grading</b></p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <p class="text-center">
+                    <strong>1st Kyu (Brown)</strong>
+                </p>
+                <br>
+                <a href="#brown" data-toggle="collapse">
+                    <img src="Images/1_Brown.png" class="img-rounded" alt="FirstKyu" width="200" height="200" title="Click on the image to see the syllabus for 1st Kyu (Brown)">
+                </a>
+                <div id="brown" class="collapse">
+                    <p><b>Techniques that you need to learn and demonstrate:</b></p>
+                    <ul class="list-unstyled">
+                        <li>
+                            <ul>
+                                <li>Kata dori shomen uchi *</li>
+                                <li>Yokomen uchi *</li>
+                                <li>Morote dori *</li>
+                                <li>Shomen uchi *</li>
+                                <li>Ryote dori *</li>
+                                <li>Koshi nage *</li>
+                                <li>Wshiro waza *</li>
+                                <li>Hanmi handachi waza *</li>
+                                <li>Suwari waza *</li>
+                                <li>Tanto dori</li>
+                                <li>Jyo waza</li>
+                                <li>Jyo dori</li>
+                                <li>Tachi dori</li>
+                                <li>Futari dori (attack from 2 opponents)</li>
+                                <li>San nin dori (attack from 3 opponents)</li>
+                                <li>Randori (freestyle with attacks from 3 or more opponents)</li>
+                                <li>Bokken suburi 1-7</li>
+                                <li>Jyo kata 1-31</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>* 5 different techniques from 5 different attacks</p>
+                    <p><b>To be eiligible to grade you must have practised in excess of 200 hours since your previous grading</b></p>
+                </div>
+            </div>
+         
+        </div>
+    </div>
+
+    <div id="Courses" class="container text-center">
+        <h2>Courses</h2>
+        <br />
+        <p>At Aikido Manchester, we offer courses to suit beginners, improvers and experienced aIkido practitioners alike. Course dates and venues will be announced on our news page and training calendar well in advance. If you’d like more information, please email <a href="mailto:contact@aikidomanchester.co.uk"><b>contact@aikidomanchester.co.uk</b></a></p>
+
+        <hr />
+        <img src="Images/BeginnersPicOnly.png" class="centre block img-responsive" alt="beginners" width="800" height="500">
+        <br />
+        <h3>Beginner’s Course</h3>
+        <p>We welcome beginners at any stage during the year. Our comprehensive 6-week teaching program covers the fundamental principles of Aikido and allows students to learn in a structured and safe manner.</p>
+        <hr />
+        <h4>Intermediate Course</h4>
+        <p>For those who have completed the beginner’s 6-week course and want to develop their knowledge and skills further. Lasting 8-weeks, the course covers more advanced techniques and principles</p>
+        <hr />
+        <h4>Yudansha Course</h4>
+        <p>This course is aimed at more experienced aikidoka who wish to prepare themselves for black-belt grading. A “Yudansha” is literally a person who posesses a “dan” (black-belt level). For more information, please contact us.</p>
+        <hr />
+        <h4>Sensei Shane Riley Course</h4>
+        <p>Sensei Shane Riley is an experienced Aikidoka who is lead instructor of the White Rose Aikikai, a series of dojos based in Yorkshire. With over 30 years’ experience, we are fortunate to have him occasionally lead short courses at our dojo. More details about his next visit will be posted on our news page and training calendar.</p>
+        <hr />
+    </div>
+
+
+    <!-- Container (Courses Section) -->
+    <div id="Events" class="bg-1">
+        <div class="container">
+            <h3 class="text-center">EVENTS</h3>
+            <p class="text-center">
+                Events for the Hyde Dojo
+            </p>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <p>March 2017</p> 
+                    <span class="label label-danger"> Riley Sensei Visit - 2nd March 2017</span>
+                    <br/>
+                    <p>
+                        All are welcome to come and train. 19:30 to 21:00 Please be ready in the Dojo by 19:20.
+                        There will be a mat fee of £5 for visiting Aikidoka.
+                    </p>
+                </li>
+                <li class="list-group-item">
+                    <p>December 2016</p>
+                    <span class="label label-danger"> Grading - 2nd December 2016</span>
+                </li>
+                <li class="list-group-item">
+                    <p>November 2016</p>
+                   
+                    <span class="label label-danger"> Riley Sensei Visit - 8th November 2016</span>
+                    <br />
+                    <p>All are welcome to come and train. 20:00 to 21:30 Please be ready in the Dojo by 19:50.
+                        There will be a mat fee of £5 for visiting Aikidoka.</p>
+                </li>
+
+                <li class="list-group-item">
+                    <p>October 2015</p>
+                    <span class="label label-danger"> Hyde Dojo and White Rose Aikikai</span>
+                    <br/>
+                    <p>I am very pleased to announce that the The Hyde Dojo is now a member of the White Rose Aikikai under the direction of Riley Sensei Shihan, 7th Dan Aikido. Further information about the White Rose can be found at: whiteroseaikido.com</p>
+                    <span class="badge">3</span>
+                </li>
+            </ul>
+
+      
+        </div>
+       
+    </div>
+
+    <div id="Articles" class="container">
+        <h2 class="text-center">Beginners Articles</h2>
+        <ul class="nav nav-tabs">
+            <li class="active">
+                <a data-toggle="tab" href="#article_1">Starting Aikido</a>
+            </li>
+            <li>
+                <a data-toggle="tab" href="#menu1">Finding Aikido</a>
+
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+                <br />
+                <img src="http://www.aikidomanchester.co.uk/beta/wp-content/uploads/2012/12/100-0021_IMG_940x400-150x150.jpg" alt="StartingAikido" width="400" height="300">
+
+                <h2>How I Started Aikido, by Billy Parkin</h2>
+                <p>I remember the first time I walked through the doors of the dojo, I was very nervous.  I was, however, instantly made to feel at ease and welcomed by the clubs instructors and students.</p>
+                <p>The instructors at the Hyde dojo are diligent, selfless and devoted to helping their students to learn and improve. In addition to this, all higher grade students are always prepared to take the time to explain and demonstrate the techniques to develop my understanding.</p>
+                <p>It was encouraging to be taught in a safe and controlled manner.  The instructors were careful to explain where the dangerous parts of the techniques were and how best to prevent injuries to myself and fellow training partner. Macho ego tripping is certainly not tolerated when training at the Hyde dojo.</p>
+                <p>Attending the club every Tuesday and Friday has now become part of my weekly routine.  I enjoy practising regularly with like- minded people in an encouraging environment. Training helps me to release the stresses of modern life.  I feel that Aikido is improving my fitness and nurturing my inner well-being and harmony</p>
+                <p>I recently took my first grading at the club after 6 months of training.  I had to learn a lot of new things that tested both my mind and body. I must say it was quite a challenge.  I was really pleased when the Sensei (teacher) said I had passed and I had done really well. I now have a new challenge moving on to the next grade</p>
+                <p>So if you wish to learn a martial art, have fun and pick up some good values along the way, I would strongly recommend Aikido Manchester, the Hyde dojo.</p>
+
+            </div>
+            <div id="menu1" class="tab-pane fade">
+                <br />
+                <img src="http://www.aikidomanchester.co.uk/beta/wp-content/uploads/2012/12/100-0021_IMG_940x400-150x150.jpg" alt="StartingAikido" width="400" height="300">
+
+                <h2>Finding Aikido: A Beginner’s Tale, By Len Holowko</h2>
+                <p>During a family BBQ in June 2011 and after a few shandies, my wife and I were reminiscing.  We asked each other if there was anything in our lives that we would have done differently.  I said ‘I wished that I had done some martial arts training’.  The response was instant laughter, which got my back up.  In a fit of pique I said that I was going to look for a club to join, to which my wife asked “what martial art are you going to do then?” whilst sniggering.  I said Aikido, as I have always admired the art of the Samurai and Japanese culture, and promptly went to my laptop to search for a local dojo.  I was secretly hoping that there wasn’t one, whilst trying to save face with my wife.  I googled for Aikido clubs in the Manchester area.  Aikido Seishin Kai was at the top of the page so I sent a message in the contact page asking if it was too late for an overweight 52-year-old to start Aikido.  Within half an hour I received a reply saying, as long as I was reasonably fit then I would be made welcome.  Still trying to save face, I said to my wife I was going to go to the next lesson.</p>
+
+            </div>
+            
+        </div>
+
+        <hr />
+    </div>
+
+    
+
+    <!-- Container (Contact Section) -->
+    <div id="contact" class="container">
+        <h2 class="text-center">Contact</h2>
+        <p class="text-center">
+            <em>Please get in touch</em>
+        </p>
+
+        <div class="row">
+            <div class="col-md-4">
+                <p>
+                    <span class="glyphicon glyphicon-map-marker"></span>Hyde, Manchester
+                </p>
+                <p><span class="glyphicon glyphicon-phone"></span>Phone: 0161 366 5545</p>
+                <p>
+                    <span class="glyphicon glyphicon-envelope"></span>Email: contact@aikidomanchester.co.uk
+                </p>
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                    </div>
+                </div>
+                <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+                <br>
+                <div class="row">
+                    <div class="col-md-12 form-group">
+                        <button class="btn pull-right" type="submit">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr />
+    </div> 
+
+
+
+    <div id="Links" class="container">
+        <h2>LINKS</h2>
+        <br />
+        <div class="col-sm-6 col-md-6 col-lg-6">
+            <p>White Rose Aikido Leeds</p>
+            <a href="http://www.whiteroseaikido.com">
+                <img src="Images/WhiteRoseAikido.png" class="img-responsive" alt="WhiteRoseAikido" width="200" height="100">
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6">
+            <a href="http://www.bab.org.uk">
+                <img src="Images/BAB.png" class="img-responsive" alt="BritishAikidoBoard" width="200" height="100">
+            </a>
+        </div>
+    </div>
+
+    <!-- Add Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+        var myCenter = new google.maps.LatLng(53.4466211, -2.0344101);
+
+        function initialize() {
+            var mapProp = {
+                center: myCenter,
+                zoom: 14,
+                scrollwheel: false,
+                draggable: false,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+            var marker = new google.maps.Marker({
+                position: myCenter,
+            });
+
+
+
+
+
+            var contentString = '<div class="info-window">' +
+               '<h3>Hyde Aikido Dojo</h3>' +
+               '<div class="info-content">' +
+               '<p>Aikido Manchester, Hyde Dojo</p>'+'<p>The Ken Ward Centre</p>'+'<p>Hyde</p>'+'<p>SK14 3NL</p>' +
+               '</div>' +
+               '</div>';
+
+            var infowindow = new google.maps.InfoWindow({
+                content: contentString,
+                maxWidth: 400
+            });
+
+            marker.addListener('click', function () {
+                infowindow.open(map, marker);
+            });
+
+
+
+
+            marker.setMap(map);
+
+           
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+   
+
+   
+
+        <!-- Footer -->
+        <footer class="text-center">
+            <div class="hidden-xs hidden-sm littlefooter">
+           
+                    <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+                        <span class="glyphicon glyphicon-chevron-up"></span>
+                    </a>
+                    <br>
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <p>CLUB DETAILS</p>
+                        <p>Address: Aikido Manchester, Hyde Dojo, The Ken Ward Centre, Hattersley, Road West, Hyde, SK14 3NL</p>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <p>PRACTICE TIMES</p>
+                        <p>Tuesday: 8:00pm - 9:30pm</p>
+                        <p>Friday:  7:30pm - 9:00pm</p>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <p>FEES</p>
+                        <p>Monthly Adults £25.00 ,Juniors – Please contact us for more details</p>
+                        <p>Yearly Subscription Fees (includes insurance), Adults £40.00 – Students & U18 £20.00</p>
+                    </div>
+            </div>
+            <div class="hidden-md hidden-lg bigfooter">
+                <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+                    <span class="glyphicon glyphicon-chevron-up"></span>
+                </a>
+                <br>
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <p>CLUB DETAILS</p>
+                    <p>Address: Aikido Manchester, Hyde Dojo, The Ken Ward Centre, Hattersley, Road West, Hyde, SK14 3NL</p>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <p>PRACTICE TIMES</p>
+                    <p>Tuesday: 8:00pm - 9:30pm</p>
+                    <p>Friday:  7:30pm - 9:00pm</p>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <p>FEES</p>
+                    <p>Monthly Adults £25.00 ,Juniors – Please contact us for more details</p>
+                    <p>Yearly Subscription Fees (includes insurance), Adults £40.00 – Students & U18 £20.00</p>
+                </div>
+
+            </div>
+            <!--<img src="Images/aikido_banner.png" alt="aikidobanner">-->
+        </footer>
+
+        <script>
+            $(document).ready(function () {
+                // Initialize Tooltip
+                $('[data-toggle="tooltip"]').tooltip();
+
+                // Add smooth scrolling to all links in navbar + footer link
+                $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+
+                        // Prevent default anchor click behavior
+                        event.preventDefault();
+
+                        // Store hash
+                        var hash = this.hash;
+
+                        // Using jQuery's animate() method to add smooth page scroll
+                        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 900, function () {
+
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location.hash = hash;
+                        });
+                    } // End if
+                });
+            })
+        </script>
+
+</body>
+</html>
