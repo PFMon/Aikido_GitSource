@@ -22,194 +22,201 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 <style>
-        body {
-            font: 400 15px/1.8 Lato, sans-serif;
-            color: #777;
-        }
+    body {
+        font: 400 15px/1.8 Lato, sans-serif;
+        color: #777;
+    }
 
-        h3, h4 {
-            margin: 10px 0 30px 0;
-            letter-spacing: 10px;
-            font-size: 20px;
-            color: #111;
-        }
+    h3, h4 {
+        margin: 10px 0 30px 0;
+        letter-spacing: 10px;
+        font-size: 20px;
+        color: #111;
+    }
 
-        divPad {
-            padding: 25px;
-        }
+    divPad {
+        padding: 25px;
+    }
 
-        .container {
-            padding: 20px 30px;
-        }
+    .container {
+        padding: 20px 30px;
+    }
 
-        .person {
-            border: 10px solid transparent;
-            margin-bottom: 25px;
-            width: 80%;
-            height: 80%;
-            opacity: 0.7;
-        }
+    .person {
+        border: 10px solid transparent;
+        margin-bottom: 25px;
+        width: 80%;
+        height: 80%;
+        opacity: 0.7;
+    }
 
-            .person:hover {
-                border-color: #f1f1f1;
-            }
+    .person:hover {
+        border-color: #f1f1f1;
+    }
 
 
-        .bg-1 {
-            background: #2d2d30;
-            color: #bdbdbd;
-        }
+    .bg-1 {
+        background: #2d2d30;
+        color: #bdbdbd;
+    }
 
-            .bg-1 h3 {
-                color: #fff;
-            }
+    .bg-1 h3 {
+        color: #fff;
+    }
 
-            .bg-1 p {
-                font-style: italic;
-            }
+    .bg-1 p {
+        font-style: italic;
+    }
 
-        .list-group-item:first-child {
-            border-top-right-radius: 0;
-            border-top-left-radius: 0;
-        }
+    .list-group-item:first-child {
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+    }
 
-        .list-group-item:last-child {
-            border-bottom-right-radius: 0;
-            border-bottom-left-radius: 0;
-        }
+    .list-group-item:last-child {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
 
-        .thumbnail {
-            padding: 0 0 15px 0;
-            border: none;
-            border-radius: 0;
-        }
+    .thumbnail {
+        padding: 0 0 15px 0;
+        border: none;
+        border-radius: 0;
+    }
 
-        .thumbnail p {
-            margin-top: 15px;
-            color: #555;
-        }
+    .thumbnail p {
+        margin-top: 15px;
+        color: #555;
+    }
 
-        .btn {
-            padding: 10px 20px;
-            background-color: #333;
-            color: #f1f1f1;
-            border-radius: 0;
-            transition: .2s;
-        }
+    .btn {
+        padding: 10px 20px;
+        background-color: #333;
+        color: #f1f1f1;
+        border-radius: 0;
+        transition: .2s;
+    }
 
-            .btn:hover, .btn:focus {
-                border: 1px solid #333;
-                background-color: #fff;
-                color: #000;
-            }
+    .btn:hover, .btn:focus {
+        border: 1px solid #333;
+        background-color: #fff;
+        color: #000;
+    }
 
-        /*.modal-header, h4, .close {
+    /*.modal-header, h4, .close {
             background-color: #333;
             color: #fff !important;
             text-align: center;
             font-size: 30px;
         }*/
 
-        .modal-header, .modal-body {
-            padding: 30px 40px;
-        }
+    .modal-header, .modal-body {
+        padding: 30px 40px;
+    }
 
-        .nav-tabs li a {
-            color: #777;
-        }
+    .nav-tabs li a {
+        color: #777;
+    }
 
-        #googleMap {
-            width: 100%;
-            height: 400px;
-            /*-webkit-filter: grayscale(100%);
+    #googleMap {
+        width: 100%;
+        height: 400px;
+        /*-webkit-filter: grayscale(100%);
             filter: grayscale(100%);*/
-        }
+    }
 
-        .navbar {
-            font-family: Montserrat, sans-serif;
-            margin-bottom: 0;
-            background-color: #2d2d30;
-            border: 0;
-            font-size: 11px !important;
-            letter-spacing: 4px;
-            opacity: 0.9;
-        }
+    .navbar {
+        font-family: Montserrat, sans-serif;
+        margin-bottom: 0;
+        background-color: #2d2d30;
+        border: 0;
+        font-size: 11px !important;
+        letter-spacing: 4px;
+        opacity: 0.9;
+    }
 
-            .navbar li a, .navbar .navbar-brand {
-                color: #d5d5d5 !important;
-            }
+    .navbar li a, .navbar .navbar-brand {
+        /*color: #d5d5d5 !important;*/
+         color: black !important;
+    }
+    }
 
-        .navbar-nav li a:hover {
-            color: #fff !important;
-        }
+    .navbar-nav li a:hover {
+        color: #fff !important;
+    }
 
-        .navbar-nav li.active a {
-            color: #fff !important;
-            background-color: #29292c !important;
-        }
+    .navbar-nav li.active a {
+        /*color: #fff !important;*/
+        color: red !important;
+        background-color: #29292c !important;
+    }
 
-        .navbar-default .navbar-toggle {
-            border-color: transparent;
-        }
+    .navbar-default .navbar-toggle {
+        border-color: transparent;
+    }
 
-        .open .dropdown-toggle {
-            color: #fff;
-            background-color: #555 !important;
-        }
+    .open .dropdown-toggle {
+        color: #fff;
+        background-color: #555 !important;
+    }
 
-        .dropdown-menu li a {
-            color: #000 !important;
-        }
+    .dropdown-menu li a {
+        color: #000 !important;
+    }
 
-            .dropdown-menu li a:hover {
-                background-color: red !important;
-            }
+    .dropdown-menu li a:hover {
+        background-color: red !important;
+    }
 
-        /*footer {
+    /*footer {
             background-color: #2d2d30;
             color: #f5f5f5;
             padding: 32px;
             height: 250px;
         }*/
 
-        .bigfooter {
-            background-color: #2d2d30;
-            color: #f5f5f5;
-            padding: 32px;
-            height: 500px;
-        }
+    .bigfooter {
+        background-color: #2d2d30;
+        color: #f5f5f5;
+        padding: 32px;
+        height: 500px;
+    }
 
-        .littlefooter {
-            background-color: #2d2d30;
-            color: #f5f5f5;
-            padding: 32px;
-            height: 250px;
-        }
+    .littlefooter {
+        background-color: #2d2d30;
+        color: #f5f5f5;
+        padding: 32px;
+        height: 250px;
+    }
 
-        footer a {
-            color: #f5f5f5;
-        }
+    footer a {
+        color: #f5f5f5;
+    }
 
-        footer a:hover {
-            color: #777;
-            text-decoration: none;
-        }
+    footer a:hover {
+        color: #777;
+        text-decoration: none;
+    }
 
-        .form-control {
-            border-radius: 0;
-        }
+    .form-control {
+        border-radius: 0;
+    }
 
-        textarea {
-            resize: none;
-        }
+    textarea {
+        resize: none;
+    }
 
-        .carouselImg {
-          width: auto;
-          height: 300px;
-          max-height: 300px;
-        }
+    .carouselImg {
+        width: auto;
+        height: 300px;
+        max-height: 300px;
+    }
 
-    </style>
+</style>
+    
+<meta name="keywords" content="Aikido, Aikidoka, Manchester, Hyde, Tameside, Duckinfield, Stockport, Ashton, Woodley, Hattersley, Godley"/>
+ <meta name="description" content="Aikido class and Aikido courses"/>
+
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
@@ -659,7 +666,7 @@
                     
                 </p>
                 <div class="row text-center">
-                    <div class="col-sm-4">
+                    <!--<div class="col-sm-4">
                         <div class="thumbnail">
                             <img src="Images/Aik_Kaiten.JPG" alt="IrimiNage" width="300" height="200">
                             
@@ -668,7 +675,7 @@
                             </p>
                             <button class="btn" data-toggle="modal" data-target="#myModal">Watch Video</button>
                         </div>
-                    </div>
+                    </div>-->
                     <div class="col-sm-4">
                         <div class="thumbnail">
                             <img src="Images/Aik_Kaiten.JPG" alt="Shomen uchi ikkyo" width="300" height="200">
@@ -680,13 +687,13 @@
                         </div>
                     </div>
                     <div class="col-sm-4">
-                        <div class="thumbnail">
+                        <!--<div class="thumbnail">
                             <img src="Images/Aik_Bokken.JPG" alt="Bokken suburi no 2" width="300" height="200">
                             <p>
                                 <strong>Bokken suburi no 2</strong>
                             </p>
                             <button class="btn" data-toggle="modal" data-target="#bokkenModal">Watch Video</button>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </div>
@@ -697,7 +704,7 @@
 
 
         <!-- Modal -->
-        <div class="modal fade" id="myModal" role="dialog">
+        <!--<div class="modal fade" id="myModal" role="dialog">
             <div class="modal-dialog">
 
                 <div class="modal-content">
@@ -708,7 +715,7 @@
                     <div class="modal-body">
                         <div class="col-md-3 col-lg-3">
                             <div class="hidden-md hidden-lg">
-                                <iframe width="200" height="200" src="https://youtu.be/DylwumpHkbA"> </iframe>
+                                <iframe width="200" height="200" src="https://youtu.be/DylwumpHkbA" target="_parent" > </iframe>
                             </div>
                             <div class="hidden-xs hidden-sm">
                                 <iframe width="500" height="500" src="https://www.youtube.com/embed/XGSy3_Czz8k"> </iframe>
@@ -719,10 +726,10 @@
                    
                 </div>
             </div>
-        </div>
+        </div>-->
 
 
-    <div class="modal fade" id="bokkenModal" role="dialog">
+    <!--<div class="modal fade" id="bokkenModal" role="dialog">
         <div class="modal-dialog">
 
             <div class="modal-content">
@@ -733,13 +740,12 @@
                 <div class="modal-body">
                     <div class="col-md-3 col-lg-3">
                         <div class="hidden-md hidden-lg">
-                            <!--<video width="200" height="200" src="" type="video/mp4"> </video>-->
                             <video width="300" height="300" controls="">
                                 <source src="/Videos/BokkenSuburiNo2.mp4" type="video/mp4">
                             </video>
                         </div>
                         <div class="hidden-xs hidden-sm">
-                            <!--<iframe width="500" height="500" src="Videos/BokkenSuburiNo2.mp4" type="video/mp4"> </iframe>-->
+                  
                             <video width="300" height="300" controls="">
                                 <source src="/Videos/BokkenSuburiNo2.mp4" type="video/mp4">
                             </video>
@@ -750,7 +756,7 @@
 
             </div>
         </div>
-    </div>
+    </div>-->
 
 
     <div class="modal fade" id="shomenModal" role="dialog">
@@ -762,17 +768,32 @@
                     <button type="button" class="close" data-dismiss="modal">Close</button>
                 </div>
                 <div class="modal-body">
-                    <div class="col-md-3 col-lg-3">
-                        <div class="hidden-md hidden-lg">
-                            <video width="200" height="200" controls>
-                                <source src="Videos/YokkomenShihoNage.mp4" type="video/mp4"/>
-                            </video>
+                    <div>
+                        <div>
+                            <!--<iframe width="420" height="345" src="https://www.youtube.com/embed/XGSy3_Czz8k"></iframe>-->
+                            <iframe width="100%" height="315" src="http://www.youtube.com/embed/0vCHajtxcjU?rel=0" frameborder="0" allowfullscreen></iframe>
+                            
+                            
+                            <!--<iframe width="100%" height="315" src="http://www.youtube.com/embed/lBpc9Q0rV_c?rel=0" frameborder="0" allowfullscreen></iframe>
+
+                            <iframe width="100%" height="315" src="http://www.youtube.com/embed/DylwumpHkbA?rel=0" frameborder="0" allowfullscreen></iframe>
+
+                            <iframe width="100%" height="315" src="http://www.youtube.com/embed/bTuT798PFrY?rel=0" frameborder="0" allowfullscreen></iframe>
+
+                            <iframe width="100%" height="315" src="http://www.youtube.com/embed/DylwumpHkbA?rel=0" frameborder="0" allowfullscreen></iframe>
+
+                            <iframe width="100%" height="315" src="http://www.youtube.com/embed/bTuT798PFrY?rel=0" frameborder="0" allowfullscreen></iframe>
+
+                            <iframe width="100%" height="315" src="http://www.youtube.com/embed/pGfqKRjMts0?rel=0" frameborder="0" allowfullscreen></iframe>
+
+                            <iframe width="100%" height="315" src="http://www.youtube.com/embed/b-sgcPSO1lw?rel=0" frameborder="0" allowfullscreen></iframe>-->
+
                         </div>
-                        <div class="hidden-xs hidden-sm">
+                        <!--<div class="hidden-xs hidden-sm">
                             <video width="500" height="500" controls>
                                 <source src="Videos/YokkomenShihoNage.mp4" type="video/mp4" />
                             </video>
-                        </div>
+                        </div>-->
                     </div>
 
                 </div>
